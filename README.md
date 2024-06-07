@@ -7,9 +7,8 @@ Welcome to the Build Conference Website repository! This project contains the so
 - [Project Structure](#project-structure)
 - [Features](#features)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Acknowledgments](#Acknowledgments)
+
 
 ## Introduction
 This repository contains all the necessary files to build and deploy a conference website. The goal of this project is to provide a user-friendly interface for conference attendees to access important information, schedules, and resources.
@@ -38,42 +37,6 @@ build_conference_website/
 │   ├── 8557_AD_IMAGE_8.png
 └── README.md
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conference Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to the Conference</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Conference Schedule</h2>
-            <p>Details about the conference schedule will go here.</p>
-        </section>
-        <section>
-            <h2>Speakers</h2>
-            <p>Information about the speakers will go here.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Conference. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
 
 ## Features
 - **Responsive Design**: The website is fully responsive and works on all devices.
