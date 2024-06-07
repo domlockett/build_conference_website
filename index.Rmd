@@ -1,0 +1,18 @@
+---
+title: "BUILD Conference"
+author:  "Washington University in St. Louis"
+output:
+  html_document:
+    fig_width: 1
+---
+
+----
+***BUIL***ding ***D***ata science
+
+
+Thank you for your interest in the Political Science Department's first collaborative computer programming event! This page briefly outlines the goals of the event and provides information about participants, lodging, and WashU contacts. 
+
+Our aim is to host a collaboration which is able to break down institutional and field barriers between scholars, generate new ideas, and highlight the strengths of the WUSTL political science program.
+
+
+

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>About your stay</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+
+.section h2 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h3 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h4 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h5 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+.section h6 {
+  padding-top: 69px;
+  margin-top: -69px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">HOME</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about_event.html">About Event</a>
+</li>
+<li>
+  <a href="travel_guide.html">Travel Guide</a>
+</li>
+<li>
+  <a href="contact_us.html">Contact Us</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">About your stay</h1>
+
+</div>
+
+
+<hr />
+<div id="arrival" class="section level2">
+<h2>Arrival</h2>
+<p>The Washington University campus is about 20 minutes by car from <a href="https://www.google.com/maps/place/St.+Louis+Lambert+International+Airport/@38.7394275,-90.3817249,13z/data=!4m12!1m6!3m5!1s0x87df36b4c56388f1:0x9dabcdbc663077a6!2sSt.+Louis+Lambert+International+Airport!8m2!3d38.7503222!4d-90.3754521!3m4!1s0x87df36b4c56388f1:0x9dabcdbc663077a6!8m2!3d38.7503222!4d-90.3754521">St Louis Lambert International Airport</a>. St. Louis is a focus city for Southwest Airlines, which has a dedicated terminal (terminal 2). All other airlines are based in Terminal 1, which has an iconic copper roof. Rental cars are available, most of which require a shuttle to a nearby location. When mapping your drive to or from the airport to your hotel, be sure to select the appropriate terminal. <br></p>
+<div id="metrolink" class="section level3">
+<h3>Metrolink</h3>
+<p>Just a 25 minute ride from your hotel, the St. Louis Metrolink departs Lambert Airport every 20 minutes and offers an efficient alternative to taxis.</p>
+<p>If arriving in <strong>terminal 1</strong>, use this <a href="http://georaman2014.wustl.edu/lambert-term1.jpg">guide</a> to reach the MetroLink.</p>
+<p>From <a href="http://georaman2014.wustl.edu/lambert-term2.jpg">terminal 2</a> (Notice the <strong>M</strong> on the map).</p>
+<p>Board the <a href="https://www.google.com/maps/dir/St.+Louis+Lambert+International+Airport,+10701+Lambert+International+Blvd,+St.+Louis,+MO+63145/Moonrise+Hotel,+6177+Delmar+Blvd,+St.+Louis,+MO+63112/@38.7026309,-90.3700409,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x87df36b4c56388f1:0x9dabcdbc663077a6!2m2!1d-90.3754521!2d38.7503222!1m5!1m1!1s0x87df4aaa6155fc13:0x1c89cb4a47d03dc9!2m2!1d-90.2987076!2d38.6555695!2m3!6e0!7e2!8j1525277820!3e3">Red Line</a> train and depart at Delmar Loop:</p>
+<center>
+<img src="images/metrolinkstops_stl.jpg" width="450px">
+</center>
+<p>Walk <a href="https://www.google.com/maps/dir/Delmar+Metrolink+Station,+Delmar+Loop,+St.+Louis,+MO/Moonrise+Hotel,+6177+Delmar+Blvd,+St.+Louis,+MO+63112/@38.6554215,-90.2977054,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x87df4aac797f929f:0x8e1429df2f882bd9!2m2!1d-90.2944808!2d38.6556873!1m5!1m1!1s0x87df4aaa6155fc13:0x1c89cb4a47d03dc9!2m2!1d-90.2987076!2d38.6555695!3e2">five minutes</a> to Moonrise Hotel.</p>
+</div>
+<div id="car-services" class="section level3">
+<h3>Car Services</h3>
+<p>Taxis and <a href="https://get.uber.com/?utm_source=AdWords_Brand&amp;utm_campaign=search-google-brand_1_-99_us-midmarket_d_txt_acq_cpc_en-us_uber_kwd-294953166390_220914064269_40469214925_e_c_track-jan22urlupdate-sl42391-1114_restructure&amp;cid=813647711&amp;adg_id=40469214925&amp;fi_id=5028672018&amp;match=e&amp;net=g&amp;dev=c&amp;dev_m=&amp;cre=220914064269&amp;kwid=kwd-294953166390&amp;kw=uber&amp;placement=&amp;tar=&amp;gclid=EAIaIQobChMIy6-d2oeJ2gIVki-BCh0X9Ap4EAAYASABEgKYk_D_BwE&amp;gclsrc=aw.ds&amp;dclid=CO6kgd2HidoCFZvI4wcdqy4BOg">Uber</a> are available at the appropriate exits.</p>
+<p>Terminal 1: Exit Door 14 to Garage Yellow level</p>
+<p>Terminal 2: Exit Door 12</p>
+<hr />
+</div>
+</div>
+<div id="accommodations" class="section level2">
+<h2>Accommodations</h2>
+<div id="hotel" class="section level3">
+<h3>Hotel</h3>
+<p>All collaborators will be staying at the <a href="https://moonrisehotel.com/the-hotel/">Moonrise Hotel</a> on the bustling Delmar Loop. The hotel is just minutes away from the Metrolink and a mile away from <a href="https://wustl.edu/wp-content/uploads/2017/06/Danforth-Campus-Map-2017.pdf">Washington University in St. Louis</a> (D4 106).</p>
+<p><a href="https://www.google.com/maps/dir/Moonrise+Hotel,+6177+Delmar+Blvd,+St.+Louis,+MO+63112/Seigle+Hall,+St.+Louis,+MO/@38.6510304,-90.3099984,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x87df4aaa6155fc13:0x1c89cb4a47d03dc9!2m2!1d-90.2987076!2d38.6555695!1m5!1m1!1s0x87d8cab396a2c315:0x370028dc042e3906!2m2!1d-90.3125344!2d38.6487983!3e2">Directions to/from hotel</a></p>
+<hr />
+</div>
+</div>
+<div id="local-food-attractions" class="section level2">
+<h2>Local food &amp; attractions</h2>
+<p>Saint Louis has a vibrant and diverse community which offers a wide variety of food and entertainment. You will be staying on Delmar Loop, one of the most popular neighborhoods for food and drink. Additionally, the nearby Forest Park is a great destination to get a quick view of the local culture.</p>
+<div id="food" class="section level3">
+<h3>Food</h3>
+<ul>
+<li><a href="https://moonrisehotel.com/dining-at-the-moonrise-hotel/">Eclipse Restaurant</a> (Dining at Moonrise)</li>
+<li><a href="http://pi-pizza.com/theloop">Pi Pizzaria</a></li>
+<li><a href="http://www.tavolov.com/">Tavolo</a></li>
+<li><a href="http://saltandsmokestl.com/menu/">Salt + Smoke</a></li>
+<li><a href="http://forknstix.com/">Fork &amp; Stix</a></li>
+<li><a href="https://www.riverfronttimes.com/stlouis/u-city-grill/Location?oid=2688527">U-City Grill</a></li>
+</ul>
+<p><br></p>
+</div>
+<div id="entertainment" class="section level3">
+<h3>Entertainment</h3>
+<ul>
+<li><a href="http://flamingobowl.com/">Flamingo Bowl</a></li>
+<li><a href="https://www.stlzoo.org/">St. Louis Zoo</a> (Free Admission)</li>
+<li><a href="http://www.slam.org/">St. Louis Art Museum</a></li>
+<li><a href="https://forestparkmap.org/">Forest Park</a></li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

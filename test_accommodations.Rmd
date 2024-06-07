@@ -1,0 +1,76 @@
+---
+title: "test"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+----
+
+## Objectives
+
+The goal of this conference is to enable and nurture conversations which might not otherwise occur about how to make data actionable. The topic of the meeting is local government responsiveness.  
+
+### The Mayoral Classification Challenge
+
+The aim of our conference will be to establish which elected mayor does the best job engaging with citizens: this outcome can be measured in a couple of different ways. We will collect  the social media data (both comments and reactions on Twitter and FB) from all mayors in the United States who are included in the Council of Mayors (mayors who are in cities over 30,000 residents).  Separately we will also collect data on mayoral traits: vote share in their elections, the length of their service in office, the type of primary election, their gender, their previous elected experience, their partisanship, their race, their ethnicity, whether they were elected in a partisan election, etc.).   We will encourage you and your team to exploit the data we have provided, to think deeply about methods and measurement, and to consider seriously what criteria we should use in evaluating mayoral responsiveness.  
+
+----
+
+## Collaborators 
+
+### Visiting
+
+- [Amber Boydstun](http://www.amber-boydstun.com/), Associate Professor of Political Science, University of California, Davis
+- [Marianne Corvellec](https://marianne-corvellec.appspot.com/), Data Scientist
+- [Melody Crowder-Meyer ](http://www.melodycrowdermeyer.org/), Assitant Professor of Political Science, Davidson College
+- [Matt Dickenson](http://mattdickenson.com/), Software Engineer
+- [Liz Gerber ](http://www-personal.umich.edu/~ergerber/Welcome.html), Professor of Public Policy, University of Michigan
+- [Justin Grimmer ](https://www.justingrimmer.org/), Associate Professor of Political Science, University of Chhicago'
+- [Chris Lucas](http://christopherlucas.org/), Assistant Professor of Political Science, Washington University in St. Louis
+- [Stella Rouse](http://gvptsites.umd.edu/srouse/), Associate Professor of Government and Politics
+- [Alexandra Siegel](https://wp.nyu.edu/smapp/about-2/), PhD candidate, New York University
+
+### WashU
+
+#### Professors
+
+- [Betsy Sinclair](https://pages.wustl.edu/betsysinclair) 
+- [Jacob Montgomery](http://pages.wustl.edu/montgomery), Associate Professor of Political Science
+- [Margit Tavits](http://pages.wustl.edu/tavits), Professor of Political Science
+- [Hedy Lee](https://soc.washington.edu/people/hedwig-hedy-lee), Associate Professor of Sociology 
+- [Justin Fox](https://polisci.wustl.edu/faculty/justin-fox) 
+- [] () 
+
+#### Graduate Students
+
+- [Erin Rossiter](https://polisci.wustl.edu/faculty/erin-rossiter)
+- [Ryden Butler](https://polisci.wustl.edu/faculty/ryden-butler)
+- [JB Duck-Mayr](http://jbduckmayr.com/)
+- [Bryant Moy](https://polisci.wustl.edu/faculty/bryant-moy)
+- [Patrick Rickert](https://polisci.wustl.edu/faculty/patrick-rickert)
+- [Min Hee Seo](https://sites.wustl.edu/minheeseo/)
+- [Michell Torres Pacheco](http://smtorres.org/)
+- [Patrick Silva](https://polisci.wustl.edu/faculty/patrick-cunha-silva)
+- [David Miller](https://sites.wustl.edu/drmiller/)
+- [Luwei Ying](https://polisci.wustl.edu/faculty/luwei-ying-0)
+
+----
+
+## Agenda
+
+<br>
+
+### May 2
+
+After your arrival you are invited to attend a happy hour hosted on the roof of the Moonrise Hotel (weather permitting). 
+
+### May 3
+
+The event will begin with a breakfast in the Seigle Hall Conference Room (#248) at 8:30. You are responsible for travel to and from your hotel (it is walkable). Participants will be divided into three groups and the morning will be spent tackling the various assignments. A lunch will be available at noon.  The collaborative troubleshooting will continue until 4:30 at which time we will share the solutions we have developed. Following the conference we will host a dinner on the rooftop of Moonrise (weather permitting)
+
+### May 4
+
+Morning departure.
