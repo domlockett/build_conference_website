@@ -13,8 +13,9 @@ Welcome to the Build Conference Website repository! This project contains the so
 ## Introduction
 This repository contains all the necessary files to build and deploy a conference website. The goal of this project is to provide a user-friendly interface for conference attendees to access important information, schedules, and resources.
 
-[![Website Screenshot](https://github.com/domlockett91/github.io/blob/master/images/website_screenshot.png)](https://dominiquelockett.com/build_website/)
-
+<a href="https://dominiquelockett.com/build_website/" target="_blank">
+  <img src="https://github.com/domlockett91/github.io/blob/master/images/website_screenshot.png" alt="Website Screenshot">
+</a>
 
 
 ## Project Structure
