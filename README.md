@@ -8,4 +8,4 @@ Welcome to the Build Conference Website repository! This project contains the so
 
 ## Acknowledgments
 
-This project is a collaborative effort involving significant contributions from various coauthors. The presented files are a record of my contributions to the work. The data contained within will be published by my coauthors to further academic research and public knowledge. I am grateful to all coauthors for their invaluable input and collaboration in this endeavor.
+This project is a collaborative effort involving significant contributions from various academics. The presented files are a copy of the project containing my contributions and are not original or source project files. The project was created for the Washington University in Saint Louis Political Science Department. 
